@@ -100,9 +100,8 @@ Customers may receive an incorrect payout amount despite placing a bet at the di
 
 ### Evidence
 
-![Screenshot 2026-07-23 at 17.55.38.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2017.55.38.png)
-![Screenshot 2026-07-23 at 17.56.07.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2017.56.07.png)
-
+![Bug2-1](Screenshots/Bug2-1.png)
+![Bug2-2](Screenshots/Bug2-2.png)
 
 ---
 
@@ -188,7 +187,7 @@ Currency inconsistency can cause incorrect transaction records, integration fail
 
 ### Evidence
 
-![Screenshot 2026-07-23 at 18.01.03.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.01.03.png)
+![Bug4](Screenshots/Bug4.png)
 
 Observed response:
 
@@ -216,7 +215,7 @@ The betting transaction returns an incorrect financial balance, creating a discr
 
 ### Evidence
 
-![Screenshot 2026-07-23 at 18.02.08.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.02.08.png)
+![Bug4](Screenshots/Bug4.png)
 
 The screenshot shows:
 
@@ -224,6 +223,7 @@ The screenshot shows:
 - Stake: `€1.00`
 - API response balance: `99.4`
 - API response currency: `USD`
+
 ---
 
 ## BUG-05 - Match Teams Are Reversed in the Success Receipt
@@ -256,7 +256,7 @@ The receipt may represent the wrong event orientation, causing customer confusio
 ### Evidence
 
 Observed in the success receipt during execution.
-![Screenshot 2026-07-23 at 18.04.25.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.04.25.png)
+![Bug5](Screenshots/Bug5.png)
 
 ---
 
@@ -288,7 +288,7 @@ The system may allow customers to place bets on already completed or started eve
 
 ### Evidence
 
-![Screenshot 2026-07-23 at 18.09.07.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.09.07.png)
+![Bug6](Screenshots/Bug6.png)
 
 ---
 ## BUG-07 - Match Count Does Not Update After Filters Are Applied
@@ -319,7 +319,7 @@ The interface provides misleading result information and reduces customer confid
 
 Observed across date and odds filtering scenarios.
 
-![Screenshot 2026-07-23 at 18.11.58.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.11.58.png)
+![Bug7](Screenshots/Bug7.png)
 
 ---
 
@@ -355,7 +355,7 @@ This exposes unsupported events and contributes to the risk of placing bets on i
 
 Observed using the custom date picker and match list.
 
-![Screenshot 2026-07-23 at 18.13.03.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.13.03.png)
+![Bug8](Screenshots/Bug8.png)
 
 ---
 
@@ -387,7 +387,7 @@ Users on smaller desktop screens, split-screen layouts, or docked browser enviro
 
 Observed while Chrome DevTools was docked to the right side.
 
-![Screenshot 2026-07-23 at 18.13.33.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.13.33.png)
+![Bug9](Screenshots/Bug9.png)
 
 
 ---
@@ -480,4 +480,4 @@ Customers may unintentionally place duplicate bets and lose additional funds due
 
 Two `place-bet` requests were visible in the Chrome DevTools Network panel during error/retry testing.
 
-![Screenshot 2026-07-23 at 18.13.33.png](..%2F..%2FDownloads%2FScreenshot%202026-07-23%20at%2018.13.33.png)
+![Bug12](Screenshots/Bug12.png)
